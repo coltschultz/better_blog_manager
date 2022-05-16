@@ -84,7 +84,8 @@ router.get('/editComment/:id', withAuth, (req, res) => {
   Comment.findByPk(req.params.id, {
     attributes: [
       'id',
-      'comment_text'
+      'comment_text',
+      'created_at'
     ],
     include: [
       {
