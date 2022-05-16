@@ -85,6 +85,12 @@ router.get('/editComment/:id', withAuth, (req, res) => {
     attributes: [
       'id',
       'comment_text'
+    ],
+    include: [
+      {
+        model: User,
+        attributes: ['username']
+      }
     ]
   })
     .then(dbPostData => {
