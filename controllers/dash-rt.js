@@ -84,12 +84,6 @@ router.get('/editComment/:id', withAuth, (req, res) => {
   Comment.findByPk(req.params.id, {
     attributes: [
       'comment_text'
-    ],
-    include: [
-      {
-        model: User,
-        attributes: ['username']
-      }
     ]
   })
     .then(dbPostData => {
