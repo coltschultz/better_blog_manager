@@ -83,6 +83,7 @@ router.get('/edit/:id', withAuth, (req, res) => {
 router.get('/editComment/:id', withAuth, (req, res) => {
   Comment.findByPk(req.params.id, {
     attributes: [
+      'id',
       'comment_text'
     ]
   })
