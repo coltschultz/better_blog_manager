@@ -7,10 +7,6 @@
     <div>
       <textarea name="comment_text" id="comment_text" type="text">{{comment_text}}</textarea>
     </div>
-    <div>
-      |
-      <a href="/comment/{{comment.id}}">{{comment.comments.length}} {{format_plural "comment" comment.comments.length}}</a>
-    </div>
     <button type="submit">Save comment</button>
     <button type="button" class="delete-comment-btn">Delete comment</button>
   </form>
@@ -31,9 +27,6 @@
     </form>
   </div>
 </div>
-
-<h4 class="mt-2">Comments:</h4>
-{{> comments comment.comments}}
 
 <script src="/javascript/edit-comment.js"></script>
 <script src="/javascript/delete-comment.js"></script>
