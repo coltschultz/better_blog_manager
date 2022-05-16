@@ -90,3 +90,7 @@ ul {
 .comment-link:hover {
     color: white;
 }
+
+.login-link {
+    color: blue;
+}
