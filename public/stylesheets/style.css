@@ -1,0 +1,92 @@
+#logo {
+    margin-left: 20px;
+    text-decoration: none;
+    position: relative;
+    z-index: 500;
+}
+
+#logoshadow {
+    background-color: darkslategrey;
+    color: darkslategray;
+    position: relative;
+    top: -60px;
+    right: -35px;
+    z-index: 1;
+}
+
+#form-container {
+    margin: 10px;
+    min-width: 300px;
+    width: 80%;
+    border: 3px solid black;
+}
+
+#post-container {
+    margin-top: 10px;
+    min-width: 300px;
+    width: 80%;
+}
+
+.edit-link {
+    position: relative;
+    top: -40px;
+    width: 80%;
+}
+
+.post {
+    width: 80%;
+    min-wdith: 300px;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+}
+
+.post-title {
+    background-color: darkslategray;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border-bottom-width: 3px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+}
+
+.post-body {
+    padding: 10px;
+    background-color: lightgray;
+}
+
+.post-body label {
+    font-weight: bold;
+}
+
+.post-content {
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+.align-left {
+    float: left;
+}
+
+.align-right {
+    float: right;
+    font-weight: normal;
+}
+
+a {
+    color: lightblue;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+.comment-link {
+    text-decoration: none;
+}
+
+.comment-link:hover {
+    color: white;
+}

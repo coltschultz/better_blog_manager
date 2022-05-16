@@ -1,0 +1,14 @@
+<div>
+  {{#each this}}
+  <section class="post mt-2">
+    <div class="post-title">
+      <h6>
+      {{user.username}} on {{format_date created_at}}
+      </h6>
+    </div>
+    <div class="post-body">
+      {{comment_text}}
+    </div>
+  </section>
+  {{/each}}
+</div>
