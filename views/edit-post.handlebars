@@ -5,10 +5,12 @@
   </h2>
   <form class="edit-post-form">
     <div>
+      Title:
       <input class="form-control" name="post-title" type="text" value="{{post.title}}" />
     </div>
     <div>
-      <textarea class="form-control mt-1" name="post-content" id="post-content" type="text">{{post.post_content}}</textarea>
+      Content:
+      <textarea class="form-control mt-1 mb-2" name="post-content" id="post-content" type="text">{{post.post_content}}</textarea>
     </div>
     <button class="btn btn-success" type="submit">Save post</button>
     <button class="btn btn-danger" type="button" class="delete-post-btn">Delete post</button>
