@@ -1,8 +1,7 @@
 async function editCommentFormHandler(event) {
     event.preventDefault();
   
-    const title = document.querySelector('input[name="post-title"]').value.trim();
-    const post_content = document.querySelector('#post-content').value.trim();
+    const comment_text = document.querySelector('#comment_text').value.trim();
     const id = window.location.toString().split('/')[
       window.location.toString().split('/').length - 1
     ];
