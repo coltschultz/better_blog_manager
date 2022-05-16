@@ -1,0 +1,40 @@
+<article>
+  <a href="/dashboard"> &larr; Back to dashboard</a>
+  <h2>
+    Edit comment
+  </h2>
+  <form class="edit-comment-form">
+    <div>
+      <textarea name="comment_text" id="comment_text" type="text">{{comment_text}}</textarea>
+    </div>
+    <div>
+      |
+      <a href="/comment/{{comment.id}}">{{comment.comments.length}} {{format_plural "comment" comment.comments.length}}</a>
+    </div>
+    <button type="submit">Save comment</button>
+    <button type="button" class="delete-comment-btn">Delete comment</button>
+  </form>
+</article>
+
+<div class="comment">
+  <div class="comment-title"><h6>Add a comment:</h6></div>
+  <div class="comment-body">
+    <form class="comment-form">
+      <div>
+        <p>Enter your comment:</p>
+        <textarea name="comment-body" class="form-control"></textarea>
+      </div>
+
+      <div>
+        <button type="submit" class="form-control btn btn-secondary mt-2">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<h4 class="mt-2">Comments:</h4>
+{{> comments comment.comments}}
+
+<script src="/javascript/edit-comment.js"></script>
+<script src="/javascript/delete-comment.js"></script>
+{{!-- <script src="/javascript/comment.js"></script> --}}

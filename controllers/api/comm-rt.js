@@ -25,6 +25,30 @@ router.post('/', (req, res) => {
   }
 });
 
+router.put('/:id', (req, res) => {
+  Comment.update(
+    {
+      comment_text: req.body.comment_text
+    },
+    {
+      where: {
+        id: req.params.id
+      }
+    }
+  )
+    .then(postData => {
+      if (!postData) {
+        res.status(404).json({ message: 'There is no comment with this ID' });
+        return;
+      }
+      res.json(postData);
+    })
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
+
 router.delete('/:id', (req, res) => {
   if (req.session) {
     Comment.destroy({
