@@ -23,5 +23,5 @@ async function editCommentFormHandler(event) {
     }
   }
   
-  document.querySelector('.edit-post-form').addEventListener('submit', editCommentFormHandler);
+  document.querySelector('.edit-comment-form').addEventListener('submit', editCommentFormHandler);
   
